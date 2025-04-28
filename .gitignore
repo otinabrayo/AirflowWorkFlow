@@ -3,6 +3,7 @@
 airflow.cfg
 airflow.db
 airflow/logs/
+airflow/dumdum.py
 airflow/airflow.db-shm
 airflow/airflow.db-wal
 airflow/simple_auth_manager_passwords.json.generated

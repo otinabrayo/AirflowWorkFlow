@@ -1,0 +1,24 @@
+# Add custom local image created in the dockerfile
+# Mount local volume inside docker container to store DAG logs and history
+# Map port 8080 of local machine to container to show in browser
+# Initiate all Airflow components
+
+version: '3'
+services:
+  airflow-server:
+    image: airflow-server:latest
+    env_file:
+      - .env
+    volumes:
+      - ./airflow:/opt/airflow
+    ports:
+      - '8080:8080'
+    command: airflow standalone
+
+#  smtp-server:
+#    image: bytemark/smtp
+#    restart: always
+
+# networks:
+#   airflow_network:
+#     driver: bridge

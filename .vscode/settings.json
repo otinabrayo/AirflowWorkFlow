@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./plugins",
+        "./airflow/plugins"
+    ]
+}

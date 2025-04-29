@@ -1,6 +1,27 @@
 {
-    "python.analysis.extraPaths": [
-        "./plugins",
-        "./airflow/plugins"
-    ]
+  "python.analysis.extraPaths": ["./plugins", "./airflow/plugins"],
+  "dataworkspace.excludedProjects": [
+    "SLEEKMART_OMS.TRAINING/SLEEKMART_OMS.TRAINING.sqlproj"
+  ],
+  "sqltools.connections": [
+    {
+      "authenticator": "SNOWFLAKE",
+      "ocspOptions": {
+        "ocspFailOpen": true
+      },
+      "snowflakeOptions": {
+        "clientSessionKeepAlive": true,
+        "clientSessionKeepAliveHeartbeatFrequency": 3600,
+        "schema": "AIRTRAIN"
+      },
+      "previewLimit": 50,
+      "driver": "Snowflake",
+      "name": "MYSNOWFLAKE",
+      "username": "otina",
+      "password": "Otinabrayo108*#$46",
+      "database": "UKSLEEK",
+      "warehouse": "COMPUTE_WH",
+      "account": "AWZITFA-SV77794"
+    }
+  ]
 }
